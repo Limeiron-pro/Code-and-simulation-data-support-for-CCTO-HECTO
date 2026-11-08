@@ -1,0 +1,789 @@
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data structure.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+velocity all set 0 0 0
+change_box all triclinic
+compute fabs all property/atom fx fy fz
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+write_data elastic_reference.data nocoeff
+print "# point E_eV V_A3 Pxx_bar Pyy_bar Pzz_bar Pyz_bar Pxz_bar Pxy_bar max_force_squared" file elastic_points.dat screen no
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "base ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain xx_-0.004; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+change_box all x scale 0.996 remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "xx_-0.004 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain xx_-0.002; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+change_box all x scale 0.998 remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "xx_-0.002 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain xx_+0.002; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+change_box all x scale 1.002 remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "xx_+0.002 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain xx_+0.004; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+change_box all x scale 1.004 remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "xx_+0.004 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain yy_-0.004; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+change_box all y scale 0.996 remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "yy_-0.004 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain yy_-0.002; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+change_box all y scale 0.998 remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "yy_-0.002 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain yy_+0.002; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+change_box all y scale 1.002 remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "yy_+0.002 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain yy_+0.004; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+change_box all y scale 1.004 remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "yy_+0.004 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain zz_-0.004; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+change_box all z scale 0.996 remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "zz_-0.004 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain zz_-0.002; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+change_box all z scale 0.998 remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "zz_-0.002 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain zz_+0.002; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+change_box all z scale 1.002 remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "zz_+0.002 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain zz_+0.004; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+change_box all z scale 1.004 remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "zz_+0.004 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain yz_-0.004; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+variable tilt equal -0.004*lz
+change_box all yz delta ${tilt} remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "yz_-0.004 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain yz_-0.002; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+variable tilt equal -0.002*lz
+change_box all yz delta ${tilt} remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "yz_-0.002 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain yz_+0.002; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+variable tilt equal 0.002*lz
+change_box all yz delta ${tilt} remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "yz_+0.002 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain yz_+0.004; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+variable tilt equal 0.004*lz
+change_box all yz delta ${tilt} remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "yz_+0.004 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain xz_-0.004; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+variable tilt equal -0.004*lz
+change_box all xz delta ${tilt} remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "xz_-0.004 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain xz_-0.002; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+variable tilt equal -0.002*lz
+change_box all xz delta ${tilt} remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "xz_-0.002 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain xz_+0.002; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+variable tilt equal 0.002*lz
+change_box all xz delta ${tilt} remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "xz_+0.002 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain xz_+0.004; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+variable tilt equal 0.004*lz
+change_box all xz delta ${tilt} remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "xz_+0.004 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain xy_-0.004; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+variable tilt equal -0.004*ly
+change_box all xy delta ${tilt} remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "xy_-0.004 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain xy_-0.002; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+variable tilt equal -0.002*ly
+change_box all xy delta ${tilt} remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "xy_-0.002 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain xy_+0.002; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+variable tilt equal 0.002*ly
+change_box all xy delta ${tilt} remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "xy_+0.002 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+
+# Independent strain xy_+0.004; restart from identical unstrained reference.
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data elastic_reference.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+variable tilt equal 0.004*ly
+change_box all xy delta ${tilt} remap units box
+velocity all set 0 0 0
+variable fsq atom fx*fx+fy*fy+fz*fz
+compute fmax all reduce max v_fsq
+min_style cg
+min_modify dmax 0.05 line quadratic
+minimize 0.0 1e-8 30000 300000
+run 0
+variable E equal pe
+variable V equal vol
+variable XX equal pxx
+variable YY equal pyy
+variable ZZ equal pzz
+variable YZ equal pyz
+variable XZ equal pxz
+variable XY equal pxy
+variable FM equal c_fmax
+print "xy_+0.004 ${E} ${V} ${XX} ${YY} ${ZZ} ${YZ} ${XZ} ${XY} ${FM}" append elastic_points.dat screen no
+print "R21_ELASTIC_COMPLETE"

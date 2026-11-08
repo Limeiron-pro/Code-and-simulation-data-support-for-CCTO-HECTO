@@ -1,0 +1,23 @@
+units metal
+atom_style charge
+boundary p p p
+read_data structure.data
+include candidate.inc
+pair_modify shift yes tail no table 0
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.14g
+velocity all set 0.0 0.0 0.0
+run 0
+variable e equal pe
+variable xx equal pxx
+variable yy equal pyy
+variable zz equal pzz
+variable xy equal pxy
+variable xz equal pxz
+variable yz equal pyz
+print "${e} ${xx} ${yy} ${zz} ${xy} ${xz} ${yz}" file md_scalar.dat screen no
+write_dump all custom md_forces.dump id type x y z fx fy fz modify sort id format float %.14g
+print "R19_STATIC_COMPLETE"

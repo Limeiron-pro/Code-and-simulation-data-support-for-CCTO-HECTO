@@ -1,0 +1,19 @@
+# FROZEN R14-05, R19 independent validation; units metal; types Ca Sr Bi Na Cu Ti O.
+pair_style buck/coul/long 10.0
+pair_modify shift yes tail no
+pair_coeff * * 0.0 1.0 0.0
+kspace_style ewald 1.0e-8
+set type 1 charge 1.43398676628747
+set type 2 charge 1.43398676628747
+set type 3 charge 2.15098014943121
+set type 4 charge 0.716993383143736
+set type 5 charge 1.43398676628747
+set type 6 charge 2.86797353257494
+set type 7 charge -1.43398676628747
+pair_coeff 1 7 2846.86021680676 0.267935826902446 0
+pair_coeff 2 7 18880.9312141519 0.22910816551447 0
+pair_coeff 3 7 5286.78659953477 0.274670020967773 0
+pair_coeff 4 7 27389.3589574264 0.201948436482054 0
+pair_coeff 5 7 712.353403869899 0.285995172581637 0
+pair_coeff 6 7 1775.53213139217 0.287576800785438 0
+pair_coeff 7 7 380654.001093466 0.165312205659472 20.7639590887227
