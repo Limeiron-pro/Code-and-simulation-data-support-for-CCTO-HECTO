@@ -1,0 +1,24 @@
+clear
+units metal
+atom_style charge
+boundary p p p
+read_data structure.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.16g
+timestep 0.00025
+reset_timestep 0
+velocity all create 300 20274001 mom yes rot no dist gaussian
+fix eq all nvt temp 300 300 0.1
+run 20000
+unfix eq
+reset_timestep 0
+print "R21_NVE_BEGIN"
+fix integrate all nve
+run 40000
+unfix integrate
+write_data final.data nocoeff
+print "R21_NVE_COMPLETE"

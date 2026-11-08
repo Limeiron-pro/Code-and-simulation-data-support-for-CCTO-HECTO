@@ -1,0 +1,78 @@
+[
+  {
+    "folder": "Elastic/CCTO",
+    "candidate": "02_balanced",
+    "material": "CCTO",
+    "kind": "elastic",
+    "natoms": 80,
+    "points": 25
+  },
+  {
+    "folder": "NVE/CCTO/N640_dt0.5fs",
+    "candidate": "02_balanced",
+    "material": "CCTO",
+    "kind": "NVE",
+    "natoms": 640,
+    "dt_fs": 0.5,
+    "NVT_ps": 5,
+    "NVE_ps": 10
+  },
+  {
+    "folder": "NVE/CCTO/N640_dt0.25fs",
+    "candidate": "02_balanced",
+    "material": "CCTO",
+    "kind": "NVE",
+    "natoms": 640,
+    "dt_fs": 0.25,
+    "NVT_ps": 5,
+    "NVE_ps": 10
+  },
+  {
+    "folder": "NVE/CCTO/N2160_dt0.5fs",
+    "candidate": "02_balanced",
+    "material": "CCTO",
+    "kind": "NVE",
+    "natoms": 2160,
+    "dt_fs": 0.5,
+    "NVT_ps": 5,
+    "NVE_ps": 10
+  },
+  {
+    "folder": "Elastic/HECTO",
+    "candidate": "02_balanced",
+    "material": "HECTO",
+    "kind": "elastic",
+    "natoms": 80,
+    "points": 25
+  },
+  {
+    "folder": "NVE/HECTO/N640_dt0.5fs",
+    "candidate": "02_balanced",
+    "material": "HECTO",
+    "kind": "NVE",
+    "natoms": 640,
+    "dt_fs": 0.5,
+    "NVT_ps": 5,
+    "NVE_ps": 10
+  },
+  {
+    "folder": "NVE/HECTO/N640_dt0.25fs",
+    "candidate": "02_balanced",
+    "material": "HECTO",
+    "kind": "NVE",
+    "natoms": 640,
+    "dt_fs": 0.25,
+    "NVT_ps": 5,
+    "NVE_ps": 10
+  },
+  {
+    "folder": "NVE/HECTO/N2160_dt0.5fs",
+    "candidate": "02_balanced",
+    "material": "HECTO",
+    "kind": "NVE",
+    "natoms": 2160,
+    "dt_fs": 0.5,
+    "NVT_ps": 5,
+    "NVE_ps": 10
+  }
+]

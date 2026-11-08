@@ -1,0 +1,27 @@
+units metal
+atom_style charge
+boundary p p p
+read_data structure.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.14g
+velocity all set 0 0 0
+run 0
+write_dump all custom initial_forces.dump id type x y z fx fy fz modify sort id format float %.14g
+min_style cg
+fix bx all box/relax aniso 0.0 vmax 0.001
+minimize 1e-12 1e-8 20000 200000
+unfix bx
+run 0
+variable energy equal pe
+variable volume equal vol
+variable pres equal press
+variable xmax equal lx
+variable ymax equal ly
+variable zmax equal lz
+print "${energy} ${volume} ${pres} ${xmax} ${ymax} ${zmax}" file relaxed_scalar.dat screen no
+write_data final.data nocoeff
+print "R20_CHECK_COMPLETE"

@@ -1,0 +1,220 @@
+LAMMPS (22 Jul 2025)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+Loaded 1 plugins from E:\LAMMPS\LAMMPS 64-bit 22Jul2025-MSMPI\plugins
+units metal
+atom_style charge
+boundary p p p
+read_data structure.data
+Reading data file ...
+  orthogonal box = (0 0 0) to (14.909999 7.4549996 7.4549996)
+  4 by 2 by 2 MPI processor grid
+  reading atoms ...
+  80 atoms
+  read_data CPU = 0.002 seconds
+include candidate.inc
+# R20 DEVELOPMENT ONLY. metal; types Ca Sr Bi Na Cu Ti O
+pair_style buck/coul/long 10.0
+pair_modify shift yes tail no table 0
+pair_coeff * * 0.0 1.0 0.0
+kspace_style ewald 1.0e-8
+set type 1 charge 1.4339867662874719
+Setting atom values ...
+  4 settings made for charge
+set type 2 charge 1.4339867662874719
+Setting atom values ...
+  0 settings made for charge
+set type 3 charge 2.150980149431208
+Setting atom values ...
+  0 settings made for charge
+set type 4 charge 0.71699338314373595
+Setting atom values ...
+  0 settings made for charge
+set type 5 charge 1.4339867662874719
+Setting atom values ...
+  12 settings made for charge
+set type 6 charge 2.8679735325749438
+Setting atom values ...
+  16 settings made for charge
+set type 7 charge -1.4339867662874719
+Setting atom values ...
+  48 settings made for charge
+pair_coeff 1 7 3479.6243839873573 0.25627290321618373 0
+pair_coeff 2 7 20335.224589569458 0.22943248788292328 0
+pair_coeff 3 7 3728.7130926253144 0.27457692298241676 0
+pair_coeff 4 7 23266.08270246804 0.19793712858413207 0
+pair_coeff 5 7 1131.0534008357934 0.26599517258163663 0
+pair_coeff 6 7 1679.6645110014942 0.29041379152399321 0
+pair_coeff 7 7 501035.2090201737 0.16407110610517975 20.763959088722672
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.14g
+velocity all set 0 0 0
+run 0
+WARNING: No fixes with time integration, atoms won't move
+For more information see https://docs.lammps.org/err0028 (src/verlet.cpp:60)
+Ewald initialization ...
+  using polynomial approximation for long-range coulomb
+  G vector (1/distance) = 0.42408217
+  estimated absolute RMS force accuracy = 1.4409853e-07
+  estimated relative force accuracy = 1.0007089e-08
+  KSpace vectors: actual max1d max3d = 505 9 3429
+                  kxmax kymax kzmax  = 9 5 5
+Generated 0 of 21 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 3 2 2
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair buck/coul/long, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 18.2 | 18.2 | 18.2 Mbytes
+   Step          Time           Temp          PotEng         KinEng         TotEng         Press           Pxx            Pyy            Pzz            Pxy            Pxz            Pyz           Volume           Lx             Ly             Lz      
+         0  0 0 -1326.134673547 0 -1326.134673547 1332.9118478061 1337.1604989696 1331.1183171915 1330.4567272572 1.3166191762661e-10 -1.8827063891392e-10 -1.3526257249879e-10 828.65329829457 14.909999133602 7.4549995668011 7.4549995668011
+Loop time of 0.0014225 on 16 procs for 0 steps with 80 atoms
+
+0.0% CPU use with 16 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Kspace  | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001423   |            |       |100.00
+
+Nlocal:              5 ave           5 max           5 min
+Histogram: 16 0 0 0 0 0 0 0 0 0
+Nghost:           2026 ave        2026 max        2026 min
+Histogram: 16 0 0 0 0 0 0 0 0 0
+Neighs:         1726.5 ave        2249 max        1257 min
+Histogram: 4 0 2 2 0 2 2 0 2 2
+
+Total # of neighbors = 27624
+Ave neighs/atom = 345.3
+Neighbor list builds = 0
+Dangerous builds = 0
+write_dump all custom initial_forces.dump id type x y z fx fy fz modify sort id format float %.14g
+min_style cg
+fix bx all box/relax aniso 0.0 vmax 0.001
+minimize 1e-12 1e-8 20000 200000
+Ewald initialization ...
+  using polynomial approximation for long-range coulomb
+  G vector (1/distance) = 0.42408217
+  estimated absolute RMS force accuracy = 1.4409853e-07
+  estimated relative force accuracy = 1.0007089e-08
+  KSpace vectors: actual max1d max3d = 505 9 3429
+                  kxmax kymax kzmax  = 9 5 5
+Generated 0 of 21 mixed pair_coeff terms from geometric mixing rule
+WARNING: Energy due to 3 extra global DOFs will be included in minimizer energies
+ (src/min.cpp:222)
+Per MPI rank memory allocation (min/avg/max) = 19.33 | 19.33 | 19.33 Mbytes
+   Step          Time           Temp          PotEng         KinEng         TotEng         Press           Pxx            Pyy            Pzz            Pxy            Pxz            Pyz           Volume           Lx             Ly             Lz      
+         0  0 0 -1326.134673547 0 -1326.134673547 1332.9118478061 1337.1604989696 1331.1183171915 1330.4567272572 1.3166191762661e-10 -1.8827063891392e-10 -1.3526257249879e-10 828.65329829457 14.909999133602 7.4549995668011 7.4549995668011
+        46  0.046 0 -1326.5481742104 0 -1326.5481742104 2.5440521004799 1.4279849153034 3.2194604898363 2.9847108963 5.3327144799585e-10 1.2183116755073e-11 -4.1451028076313e-11 831.64758889243 14.927942818656 7.4639662313513 7.4639668863953
+Loop time of 0.292509 on 16 procs for 46 steps with 80 atoms
+
+91.8% CPU use with 16 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+     -1326.13467354696  -1326.54817421166  -1326.54817421036
+  Force two-norm initial, final = 3.7149281 0.0026873335
+  Force max component initial, final = 0.69158576 0.0016691295
+  Final line search alpha, max atom move = 1 0.0016691295
+  Iterations, force evaluations = 46 80
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.008099   | 0.014745   | 0.01932    |   2.5 |  5.04
+Kspace  | 0.009819   | 0.015313   | 0.022246   |   2.6 |  5.23
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.042785   | 0.082763   | 0.092598   |   4.6 | 28.29
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.1797     |            |       | 61.43
+
+Nlocal:              5 ave           5 max           5 min
+Histogram: 16 0 0 0 0 0 0 0 0 0
+Nghost:           2026 ave        2026 max        2026 min
+Histogram: 16 0 0 0 0 0 0 0 0 0
+Neighs:         1726.5 ave        2249 max        1257 min
+Histogram: 4 0 2 2 0 2 2 0 2 2
+
+Total # of neighbors = 27624
+Ave neighs/atom = 345.3
+Neighbor list builds = 0
+Dangerous builds = 0
+unfix bx
+run 0
+WARNING: No fixes with time integration, atoms won't move
+For more information see https://docs.lammps.org/err0028 (src/verlet.cpp:60)
+Ewald initialization ...
+  using polynomial approximation for long-range coulomb
+  G vector (1/distance) = 0.4240609
+  estimated absolute RMS force accuracy = 1.4410809e-07
+  estimated relative force accuracy = 1.0007753e-08
+  KSpace vectors: actual max1d max3d = 505 9 3429
+                  kxmax kymax kzmax  = 9 5 5
+Generated 0 of 21 mixed pair_coeff terms from geometric mixing rule
+Per MPI rank memory allocation (min/avg/max) = 18.2 | 18.2 | 18.2 Mbytes
+   Step          Time           Temp          PotEng         KinEng         TotEng         Press           Pxx            Pyy            Pzz            Pxy            Pxz            Pyz           Volume           Lx             Ly             Lz      
+        46  0 0 -1326.5481739219 0 -1326.5481739219 2.5443451880086 1.4282780022446 3.2197535777015 2.9850039840796 -7.3345933965019e-11 1.1105854538883e-11 9.4184604966994e-11 831.64758889243 14.927942818656 7.4639662313513 7.4639668863953
+Loop time of 3.1875e-06 on 16 procs for 0 steps with 80 atoms
+
+0.0% CPU use with 16 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Kspace  | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 3.187e-06  |            |       |100.00
+
+Nlocal:              5 ave           5 max           5 min
+Histogram: 16 0 0 0 0 0 0 0 0 0
+Nghost:           2026 ave        2026 max        2026 min
+Histogram: 16 0 0 0 0 0 0 0 0 0
+Neighs:         1726.5 ave        2258 max        1253 min
+Histogram: 2 2 2 2 0 2 2 0 2 2
+
+Total # of neighbors = 27624
+Ave neighs/atom = 345.3
+Neighbor list builds = 0
+Dangerous builds = 0
+variable energy equal pe
+variable volume equal vol
+variable pres equal press
+variable xmax equal lx
+variable ymax equal ly
+variable zmax equal lz
+print "${energy} ${volume} ${pres} ${xmax} ${ymax} ${zmax}" file relaxed_scalar.dat screen no
+write_data final.data nocoeff
+System init for write_data ...
+Ewald initialization ...
+  using polynomial approximation for long-range coulomb
+  G vector (1/distance) = 0.4240609
+  estimated absolute RMS force accuracy = 1.4410809e-07
+  estimated relative force accuracy = 1.0007753e-08
+  KSpace vectors: actual max1d max3d = 505 9 3429
+                  kxmax kymax kzmax  = 9 5 5
+Generated 0 of 21 mixed pair_coeff terms from geometric mixing rule
+print "R20_CHECK_COMPLETE"
+R20_CHECK_COMPLETE
+Total wall time: 0:00:00

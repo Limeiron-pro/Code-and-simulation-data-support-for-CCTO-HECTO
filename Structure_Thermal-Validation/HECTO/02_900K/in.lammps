@@ -1,0 +1,44 @@
+units metal
+atom_style charge
+boundary p p p
+read_data structure.data
+include candidate.inc
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step time temp pe ke etotal press pxx pyy pzz pxy pxz pyz vol lx ly lz
+thermo_modify flush yes lost error format float %.14g
+replicate 2 2 2
+timestep 0.0005
+velocity all create 900 20273602 mom yes rot no dist gaussian
+fix eq all npt temp 900 900 0.1 aniso 0.0 0.0 1.0
+run 20000
+variable bx equal lx
+variable by equal ly
+variable bz equal lz
+fix bm all ave/time 100 100 10000 v_bx v_by v_bz file mean_box.dat
+run 10000
+unfix eq
+variable ax equal f_bm[1]
+variable ay equal f_bm[2]
+variable az equal f_bm[3]
+variable TX equal ${ax}
+variable TY equal ${ay}
+variable TZ equal ${az}
+unfix bm
+change_box all x final 0 ${TX} y final 0 ${TY} z final 0 ${TZ} remap units box
+fix eq all nvt temp 900 900 0.1
+run 10000
+variable tt equal temp
+variable pp equal press
+variable vv equal vol
+variable ee equal pe
+fix stats all ave/time 100 1 100 v_tt v_pp v_vv v_ee file production_stats.dat format %.14g
+dump prod all custom 1000 production.dump id type xu yu zu fx fy fz
+dump_modify prod sort id format float %.14g
+run 20000
+unfix eq
+unfix stats
+undump prod
+write_data final.data nocoeff
+print "R20_CHECK_COMPLETE"
