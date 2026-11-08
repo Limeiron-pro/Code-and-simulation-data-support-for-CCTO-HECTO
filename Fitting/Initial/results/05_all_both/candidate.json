@@ -1,0 +1,93 @@
+{
+  "status": "DIAGNOSTIC_CANDIDATE_NOT_APPROVED",
+  "case": "05_all_both",
+  "optimizer_success": true,
+  "message": "`ftol` termination condition is satisfied.",
+  "nfev": 22,
+  "elapsed_seconds": 5.429613549997157,
+  "cost": 16.632123434776723,
+  "parameters_metal": [
+    [
+      2846.860216806764,
+      0.26793582690244644,
+      0.0
+    ],
+    [
+      18880.931214151897,
+      0.22910816551447036,
+      0.0
+    ],
+    [
+      5286.786599534772,
+      0.2746700209677728,
+      0.0
+    ],
+    [
+      27389.358957426433,
+      0.2019484364820539,
+      0.0
+    ],
+    [
+      712.3534038698989,
+      0.28599517258163665,
+      0.0
+    ],
+    [
+      1775.5321313921743,
+      0.28757680078543774,
+      0.0
+    ],
+    [
+      380654.0010934659,
+      0.16531220565947202,
+      20.76395908872267
+    ]
+  ],
+  "pair_order": [
+    "Ca-O",
+    "Sr-O",
+    "Bi-O",
+    "Na-O",
+    "Cu-O",
+    "Ti-O",
+    "O-O"
+  ],
+  "charge_multiplier_of_R16": 0.8652104347801916,
+  "charges_e": {
+    "Ca": 1.433986766287472,
+    "Sr": 1.433986766287472,
+    "Bi": 2.150980149431208,
+    "Na": 0.716993383143736,
+    "Cu": 1.433986766287472,
+    "Ti": 2.867973532574944,
+    "O": -1.433986766287472
+  },
+  "free_parameter_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "R13_withheld_material": null,
+  "R13_roles_explained": "The other R13 labels used in training; both used if withheld is null. Cross-validation uses labels already inspected, not a pristine prospective test.",
+  "regularization": {
+    "weight": 0.1,
+    "logA_scale": 0.6931471805599453,
+    "rho_scale_A": 0.03
+  },
+  "near_bounds": [
+    1,
+    6
+  ]
+}

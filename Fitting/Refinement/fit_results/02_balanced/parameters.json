@@ -1,0 +1,119 @@
+{
+  "status": "DEVELOPMENT_CANDIDATE_NOT_APPROVED",
+  "case": "05_all_both",
+  "optimizer_success": true,
+  "message": "`ftol` termination condition is satisfied.",
+  "nfev": 22,
+  "elapsed_seconds": 6.349916302999986,
+  "cost": 16.632123434776723,
+  "parameters_metal": [
+    [
+      3479.6243839873573,
+      0.25627290321618373,
+      0.0
+    ],
+    [
+      20335.224589569458,
+      0.22943248788292328,
+      0.0
+    ],
+    [
+      3728.7130926253144,
+      0.27457692298241676,
+      0.0
+    ],
+    [
+      23266.08270246804,
+      0.19793712858413207,
+      0.0
+    ],
+    [
+      1131.0534008357934,
+      0.26599517258163663,
+      0.0
+    ],
+    [
+      1679.6645110014942,
+      0.2904137915239932,
+      0.0
+    ],
+    [
+      501035.2090201737,
+      0.16407110610517975,
+      20.76395908872267
+    ]
+  ],
+  "pair_order": [
+    "Ca-O",
+    "Sr-O",
+    "Bi-O",
+    "Na-O",
+    "Cu-O",
+    "Ti-O",
+    "O-O"
+  ],
+  "charge_multiplier_of_R16": 0.8652104347801916,
+  "charges_e": {
+    "Ca": 1.433986766287472,
+    "Sr": 1.433986766287472,
+    "Bi": 2.150980149431208,
+    "Na": 0.716993383143736,
+    "Cu": 1.433986766287472,
+    "Ti": 2.867973532574944,
+    "O": -1.433986766287472
+  },
+  "free_parameter_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "R13_withheld_material": null,
+  "R13_roles_explained": "The other R13 labels used in training; both used if withheld is null. Cross-validation uses labels already inspected, not a pristine prospective test.",
+  "regularization": {
+    "weight": 0.1,
+    "logA_scale": 0.6931471805599453,
+    "rho_scale_A": 0.03
+  },
+  "near_bounds": [
+    1,
+    6
+  ],
+  "charge_policy": "fixed at R14; all C coefficients fixed",
+  "fit_weights": {
+    "curvature": 2.0,
+    "thermal": 1.0,
+    "regularization": 0.25
+  },
+  "bounded_coordinates": [
+    0.2007076436515753,
+    -0.583146184313136,
+    0.07420210149707913,
+    0.016216118422645906,
+    -0.3491474544535218,
+    -0.004654899267801754,
+    -0.16315795670759356,
+    -0.20056539489609188,
+    0.4623305485755392,
+    -0.9999999999999999,
+    -0.055506092691400104,
+    0.14184953692777477,
+    0.27478554719029163,
+    -0.06205497771461344
+  ],
+  "optimizer_message": "`ftol` termination condition is satisfied.",
+  "training_data_SHA256": "03c482978b25731674e6543ac8bc1510f7a3bf2705b1936799a0977c853b7c63",
+  "original_R14_training_data_included": false,
+  "limitations": "Local refinement using 84 inspected R19 labels only. Original R14 training set is not bundled. Must recheck original training/offcenter cases before replacing R14. No pristine test or MD approval."
+}

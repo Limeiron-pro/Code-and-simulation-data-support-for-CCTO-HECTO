@@ -1,0 +1,674 @@
+[
+  {
+    "id": "r19_review/00_DFT_Base/CCTO",
+    "material": "CCTO",
+    "kind": "base",
+    "T": null,
+    "force_RMSE_eV_A": 0.23063902719142926,
+    "pressure_RMSE_GPa": 0.0693009893002916
+  },
+  {
+    "id": "r19_review/00_DFT_Base/HECTO",
+    "material": "HECTO",
+    "kind": "base",
+    "T": null,
+    "force_RMSE_eV_A": 0.40167846069439156,
+    "pressure_RMSE_GPa": 0.014658191128332854
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Ca_x_minus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.2306544585202915,
+    "pressure_RMSE_GPa": 0.06926595986584305
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Ca_x_plus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23065456321504066,
+    "pressure_RMSE_GPa": 0.06925322775343709
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Ca_y_minus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.2306500718657589,
+    "pressure_RMSE_GPa": 0.06917263716728009
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Ca_y_plus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.2306502236950668,
+    "pressure_RMSE_GPa": 0.06922281517392015
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Ca_z_minus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23064961296799646,
+    "pressure_RMSE_GPa": 0.06917277833991614
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Ca_z_plus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23064970026574322,
+    "pressure_RMSE_GPa": 0.06922461126865477
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Cu_x_minus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23068731179124513,
+    "pressure_RMSE_GPa": 0.06919529596942771
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Cu_x_plus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.2306873532787876,
+    "pressure_RMSE_GPa": 0.06912693200292643
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Cu_y_minus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23068077013285154,
+    "pressure_RMSE_GPa": 0.06923925649338172
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Cu_y_plus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23068093676634777,
+    "pressure_RMSE_GPa": 0.06928496651098637
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Cu_z_minus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23066856673362104,
+    "pressure_RMSE_GPa": 0.06915175059234965
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Cu_z_plus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.230668436933387,
+    "pressure_RMSE_GPa": 0.06909425673986838
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/O_x_minus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23067541495843755,
+    "pressure_RMSE_GPa": 0.06924629462215287
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/O_x_plus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23067541110227946,
+    "pressure_RMSE_GPa": 0.06930662139752818
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/O_y_minus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23138147246164384,
+    "pressure_RMSE_GPa": 0.07138969773861163
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/O_y_plus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.22997301778504964,
+    "pressure_RMSE_GPa": 0.06740396498329058
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/O_z_minus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23110745283646325,
+    "pressure_RMSE_GPa": 0.0696162746270007
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/O_z_plus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23028643438151777,
+    "pressure_RMSE_GPa": 0.06917355991357782
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Ti_x_minus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23084534220093492,
+    "pressure_RMSE_GPa": 0.06919798724593093
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Ti_x_plus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.2308455308842108,
+    "pressure_RMSE_GPa": 0.06913648378882747
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Ti_y_minus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23082869635139305,
+    "pressure_RMSE_GPa": 0.06916259415343928
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Ti_y_plus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23082859930640218,
+    "pressure_RMSE_GPa": 0.0691929870558244
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Ti_z_minus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23082715777720667,
+    "pressure_RMSE_GPa": 0.06915849339928291
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/CCTO/Ti_z_plus",
+    "material": "CCTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.23082718056808252,
+    "pressure_RMSE_GPa": 0.0691987780767117
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Bi_x_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40079445974061245,
+    "pressure_RMSE_GPa": 0.013677118164516607
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Bi_x_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4025656597763262,
+    "pressure_RMSE_GPa": 0.016254319603759636
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Bi_y_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4016804819633745,
+    "pressure_RMSE_GPa": 0.014618079085775879
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Bi_y_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4016803934481429,
+    "pressure_RMSE_GPa": 0.015201310594665743
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Bi_z_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40167939395576924,
+    "pressure_RMSE_GPa": 0.015167225543028474
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Bi_z_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40167940045510375,
+    "pressure_RMSE_GPa": 0.015165177135542945
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Ca_x_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40211167592084784,
+    "pressure_RMSE_GPa": 0.014995107302789266
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Ca_x_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40126590999189626,
+    "pressure_RMSE_GPa": 0.014238340966717195
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Ca_y_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4016847735014875,
+    "pressure_RMSE_GPa": 0.014655028395330118
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Ca_y_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40168469785300837,
+    "pressure_RMSE_GPa": 0.014583403544059329
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Ca_z_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4016845624218376,
+    "pressure_RMSE_GPa": 0.014623548645294065
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Ca_z_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4016845626440949,
+    "pressure_RMSE_GPa": 0.014656520347109495
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Cu_x_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4022474545398339,
+    "pressure_RMSE_GPa": 0.015061773228021973
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Cu_x_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4011626502782866,
+    "pressure_RMSE_GPa": 0.01406691227366114
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Cu_y_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40170202869314353,
+    "pressure_RMSE_GPa": 0.014594082110647912
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Cu_y_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40170199543455454,
+    "pressure_RMSE_GPa": 0.015218291189905841
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Cu_z_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4016934464337199,
+    "pressure_RMSE_GPa": 0.015180181671986419
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Cu_z_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4016936741245431,
+    "pressure_RMSE_GPa": 0.01467371364099312
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Na_x_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4014507320276505,
+    "pressure_RMSE_GPa": 0.014657083104403792
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Na_x_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40192186607838937,
+    "pressure_RMSE_GPa": 0.014751642700794357
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Na_y_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.401684465996451,
+    "pressure_RMSE_GPa": 0.014684318491492047
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Na_y_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40168431709642144,
+    "pressure_RMSE_GPa": 0.015221827250082698
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Na_z_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40168393704642724,
+    "pressure_RMSE_GPa": 0.014680636621880634
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Na_z_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40168388636735125,
+    "pressure_RMSE_GPa": 0.01469084235321816
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/O_x_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40108820108262944,
+    "pressure_RMSE_GPa": 0.014341330759831397
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/O_x_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40231095697563346,
+    "pressure_RMSE_GPa": 0.015592855762818788
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/O_y_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40241874234009983,
+    "pressure_RMSE_GPa": 0.01904224790248114
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/O_y_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4009854870517559,
+    "pressure_RMSE_GPa": 0.010512400172302181
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/O_z_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4023634549022306,
+    "pressure_RMSE_GPa": 0.013256685843499105
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/O_z_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40105313015096955,
+    "pressure_RMSE_GPa": 0.01674646260520068
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Sr_x_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4023441200326448,
+    "pressure_RMSE_GPa": 0.015441502956378493
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Sr_x_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4010354654335064,
+    "pressure_RMSE_GPa": 0.014554753775888897
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Sr_y_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40168801295098194,
+    "pressure_RMSE_GPa": 0.014774938092173812
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Sr_y_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4016879392685684,
+    "pressure_RMSE_GPa": 0.014715899457754176
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Sr_z_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4016884391106885,
+    "pressure_RMSE_GPa": 0.014717744657624406
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Sr_z_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.40168831849908926,
+    "pressure_RMSE_GPa": 0.014626235694886977
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Ti_x_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4038141443949921,
+    "pressure_RMSE_GPa": 0.015824081630702147
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Ti_x_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.3997727556711096,
+    "pressure_RMSE_GPa": 0.013928015182448777
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Ti_y_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4016281621302087,
+    "pressure_RMSE_GPa": 0.014392801260393877
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Ti_y_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4019465833126705,
+    "pressure_RMSE_GPa": 0.014501947640681672
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Ti_z_minus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.401739228951065,
+    "pressure_RMSE_GPa": 0.014518137863998132
+  },
+  {
+    "id": "r19_review/03_Local_Displacement/HECTO/Ti_z_plus",
+    "material": "HECTO",
+    "kind": "displacement",
+    "T": null,
+    "force_RMSE_eV_A": 0.4018324189991917,
+    "pressure_RMSE_GPa": 0.014644656978435146
+  },
+  {
+    "id": "r19_review/05_Shear_Consistency/CCTO/gamma_+0.005",
+    "material": "CCTO",
+    "kind": "shear",
+    "T": null,
+    "force_RMSE_eV_A": 0.23064142635609644,
+    "pressure_RMSE_GPa": 0.07074955457395705
+  },
+  {
+    "id": "r19_review/05_Shear_Consistency/CCTO/gamma_+0.010",
+    "material": "CCTO",
+    "kind": "shear",
+    "T": null,
+    "force_RMSE_eV_A": 0.23064135095053495,
+    "pressure_RMSE_GPa": 0.07470843819286245
+  },
+  {
+    "id": "r19_review/05_Shear_Consistency/CCTO/gamma_-0.005",
+    "material": "CCTO",
+    "kind": "shear",
+    "T": null,
+    "force_RMSE_eV_A": 0.23064145886261042,
+    "pressure_RMSE_GPa": 0.07085700661672514
+  },
+  {
+    "id": "r19_review/05_Shear_Consistency/CCTO/gamma_-0.010",
+    "material": "CCTO",
+    "kind": "shear",
+    "T": null,
+    "force_RMSE_eV_A": 0.23064133073032653,
+    "pressure_RMSE_GPa": 0.07470334645329042
+  },
+  {
+    "id": "r19_review/05_Shear_Consistency/HECTO/gamma_+0.005",
+    "material": "HECTO",
+    "kind": "shear",
+    "T": null,
+    "force_RMSE_eV_A": 0.4016824553851337,
+    "pressure_RMSE_GPa": 0.01893040725620508
+  },
+  {
+    "id": "r19_review/05_Shear_Consistency/HECTO/gamma_+0.010",
+    "material": "HECTO",
+    "kind": "shear",
+    "T": null,
+    "force_RMSE_eV_A": 0.40169543120337975,
+    "pressure_RMSE_GPa": 0.027367890562122358
+  },
+  {
+    "id": "r19_review/05_Shear_Consistency/HECTO/gamma_-0.005",
+    "material": "HECTO",
+    "kind": "shear",
+    "T": null,
+    "force_RMSE_eV_A": 0.40168247480589003,
+    "pressure_RMSE_GPa": 0.018931089513638154
+  },
+  {
+    "id": "r19_review/05_Shear_Consistency/HECTO/gamma_-0.010",
+    "material": "HECTO",
+    "kind": "shear",
+    "T": null,
+    "force_RMSE_eV_A": 0.4016954457826321,
+    "pressure_RMSE_GPa": 0.027322889937168415
+  },
+  {
+    "id": "r19_ccto_supplement/CCTO/300K_DFT_frame01",
+    "material": "CCTO",
+    "kind": "thermal_holdout",
+    "T": 300,
+    "force_RMSE_eV_A": 0.35200319516617223,
+    "pressure_RMSE_GPa": 0.17825448610307976
+  },
+  {
+    "id": "r19_ccto_supplement/CCTO/300K_DFT_frame02",
+    "material": "CCTO",
+    "kind": "thermal_holdout",
+    "T": 300,
+    "force_RMSE_eV_A": 0.3455504458543408,
+    "pressure_RMSE_GPa": 0.21504856169029535
+  },
+  {
+    "id": "r19_ccto_supplement/CCTO/900K_DFT_frame01",
+    "material": "CCTO",
+    "kind": "thermal_holdout",
+    "T": 900,
+    "force_RMSE_eV_A": 0.4901567960197176,
+    "pressure_RMSE_GPa": 0.23137847417269042
+  },
+  {
+    "id": "r19_ccto_supplement/CCTO/900K_DFT_frame02",
+    "material": "CCTO",
+    "kind": "thermal_holdout",
+    "T": 900,
+    "force_RMSE_eV_A": 0.5783739646705566,
+    "pressure_RMSE_GPa": 0.6297632707569794
+  },
+  {
+    "id": "r19_01_supplement/01_Thermal_Holdout/HECTO/300K_DFT_frame01",
+    "material": "HECTO",
+    "kind": "thermal_holdout",
+    "T": 300,
+    "force_RMSE_eV_A": 0.38319480548133095,
+    "pressure_RMSE_GPa": 0.2396237831484534
+  },
+  {
+    "id": "r19_01_supplement/01_Thermal_Holdout/HECTO/300K_DFT_frame02",
+    "material": "HECTO",
+    "kind": "thermal_holdout",
+    "T": 300,
+    "force_RMSE_eV_A": 0.38839642296119525,
+    "pressure_RMSE_GPa": 0.11780288271862371
+  },
+  {
+    "id": "r19_01_supplement/01_Thermal_Holdout/HECTO/900K_DFT_frame01",
+    "material": "HECTO",
+    "kind": "thermal_holdout",
+    "T": 900,
+    "force_RMSE_eV_A": 0.5655504325711552,
+    "pressure_RMSE_GPa": 0.39242009894126645
+  },
+  {
+    "id": "r19_01_supplement/01_Thermal_Holdout/HECTO/900K_DFT_frame02",
+    "material": "HECTO",
+    "kind": "thermal_holdout",
+    "T": 900,
+    "force_RMSE_eV_A": 0.6437821801548052,
+    "pressure_RMSE_GPa": 0.41195982469320275
+  }
+]

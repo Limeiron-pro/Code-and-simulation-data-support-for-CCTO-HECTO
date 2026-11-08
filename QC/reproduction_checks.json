@@ -1,0 +1,53 @@
+{
+  "P0_parameter_max_absolute_difference": 0.0,
+  "PB_parameter_max_absolute_difference": 0.0,
+  "initial_and_balanced_optimizations": "executed successfully; recorded parameters reproduced",
+  "elastic_summary_max_difference": 0.0,
+  "independent_DFT_parsed": 8,
+  "MD_production_rerun": false,
+  "VASP_rerun": false,
+  "software": {
+    "numpy": "2.3.5"
+  },
+  "thermal_metrics_recomputed_from_R20_8_development_frames": [
+    {
+      "potential": "P0",
+      "thermal_frames": "8",
+      "force_RMSE_eV_A": "0.5043486978110971",
+      "stress_RMSE_GPa": "0.39999953577727315",
+      "relative_energy_RMSE_meV_atom": "21.610166023637195"
+    },
+    {
+      "potential": "PB",
+      "thermal_frames": "8",
+      "force_RMSE_eV_A": "0.48089426011775227",
+      "stress_RMSE_GPa": "0.3396983641864263",
+      "relative_energy_RMSE_meV_atom": "20.20134079533591"
+    }
+  ],
+  "manuscript_thermal_RMSE_PB": {
+    "force_eV_A": 0.4657,
+    "stress_GPa": 0.3151,
+    "energy_meV_atom": 21.45
+  },
+  "Fig2_R22_evaluation_matches_manuscript": true,
+  "Fig2_evaluation_RMSE": [
+    {
+      "potential": "P0",
+      "frames": "8",
+      "force_components": "1920",
+      "force_RMSE_eV_A": "0.48525791509994215",
+      "stress_RMSE_GPa": "0.3389549749200014",
+      "relative_energy_RMSE_meV_atom": "21.868974885882107"
+    },
+    {
+      "potential": "PB",
+      "frames": "8",
+      "force_components": "1920",
+      "force_RMSE_eV_A": "0.46568621983897773",
+      "stress_RMSE_GPa": "0.3150815596205458",
+      "relative_energy_RMSE_meV_atom": "21.44897195770747"
+    }
+  ],
+  "Fig3_PB_force_component_pairs": 1920
+}

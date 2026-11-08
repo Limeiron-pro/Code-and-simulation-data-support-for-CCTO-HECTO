@@ -1,0 +1,34 @@
+[
+  {
+    "folder": "CCTO_300K",
+    "status": "parsed; inspect magnetic flags"
+  },
+  {
+    "folder": "CCTO_900K",
+    "status": "parsed; inspect magnetic flags"
+  },
+  {
+    "folder": "HECTO_300K",
+    "status": "parsed; inspect magnetic flags"
+  },
+  {
+    "folder": "HECTO_900K",
+    "status": "parsed; inspect magnetic flags"
+  },
+  {
+    "folder": "B/CCTO_300K",
+    "status": "parsed; inspect magnetic flags"
+  },
+  {
+    "folder": "B/CCTO_900K",
+    "status": "parsed; inspect magnetic flags"
+  },
+  {
+    "folder": "B/HECTO_300K",
+    "status": "parsed; inspect magnetic flags"
+  },
+  {
+    "folder": "B/HECTO_900K",
+    "status": "parsed; inspect magnetic flags"
+  }
+]

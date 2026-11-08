@@ -1,0 +1,30 @@
+{
+  "max_nfev": 300,
+  "energy_scale_eV_atom": 0.03,
+  "force_scale_eV_A": 0.3,
+  "pressure_scale_GPa": 1.0,
+  "guard_scale_eV_A": 0.2,
+  "group_weight": {
+    "original_CCTO": 2.0,
+    "original_HECTO": 1.0,
+    "R4_CCTO": 2.0,
+    "R4_HECTO": 1.0,
+    "R5_HECTO": 1.0,
+    "R10_CCTO": 1.0,
+    "R10_HECTO": 1.0,
+    "R13_CCTO": 1.0,
+    "R13_HECTO": 1.0
+  },
+  "A_bounds_eV": [
+    10.0,
+    10000000.0
+  ],
+  "rho_bounds_A": [
+    0.12,
+    0.6
+  ],
+  "q_bounds": [
+    0.45,
+    0.95
+  ]
+}

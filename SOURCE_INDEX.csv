@@ -1,0 +1,243 @@
+delivered_path,source
+Analysis/analysis_common.py,R22_Independent_Structure_Vibration(1).zip::analysis_common.py
+Analysis/analyze_development.py,Packaging adaptation or actual Python reproduction output
+Analysis/analyze_elastic_nve.py,Packaging adaptation
+Analysis/analyze_independent.py,Packaging adaptation
+Analysis/analyze_moduli.py,Packaging adaptation or actual Python reproduction output
+Analysis/analyze_structure.py,Packaging adaptation or actual Python reproduction output
+Analysis/export_evaluation_figures.py,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+CHANGELOG.md,Packaging adaptation
+Figure_Data/Development/thermal_cases.csv,Packaging adaptation or actual Python reproduction output
+Figure_Data/Development/thermal_development_RMSE.csv,Packaging adaptation or actual Python reproduction output
+Figure_Data/Development/thermal_development_force_pairs.csv,Packaging adaptation or actual Python reproduction output
+Figure_Data/Elastic_NVE/elastic_summary.csv,Packaging adaptation or actual Python reproduction output
+Figure_Data/Elastic_NVE/elastic_tensor.csv,Packaging adaptation or actual Python reproduction output
+Figure_Data/Elastic_NVE/task_status_and_NVE.csv,Packaging adaptation or actual Python reproduction output
+Figure_Data/Independent_Thermal/Fig2_RMSE.csv,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Figure_Data/Independent_Thermal/Fig3_force_pairs.csv,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Figure_Data/Independent_Thermal/by_element.csv,Packaging adaptation or actual Python reproduction output
+Figure_Data/Independent_Thermal/errors.csv,Packaging adaptation or actual Python reproduction output
+Figure_Data/Independent_Thermal/evaluation_per_frame.csv,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Figure_Data/Independent_Thermal/status.json,Packaging adaptation or actual Python reproduction output
+Figure_Data/Table6_Fig4_structure.csv,Packaging adaptation or actual Python reproduction output
+Figure_Data/Table7_moduli.csv,Packaging adaptation or actual Python reproduction output
+Figure_Data/Table8_CCTO.csv,Packaging adaptation or actual Python reproduction output
+Figure_Data/Table8_HECTO.csv,Packaging adaptation or actual Python reproduction output
+Fitting/Initial/data/R11_candidate.json,CCTO_HECTO_R14_Targeted_Refit(1).zip::data/R11_candidate.json
+Fitting/Initial/data/fit_geometry.npz,CCTO_HECTO_R14_Targeted_Refit(1).zip::data/fit_geometry.npz
+Fitting/Initial/data/training_references.json,CCTO_HECTO_R14_Targeted_Refit(1).zip::data/training_references.json
+Fitting/Initial/fit_config.json,CCTO_HECTO_R14_Targeted_Refit(1).zip::fit_config.json
+Fitting/Initial/fit_initial.py,Packaging adaptation
+Fitting/Initial/model.py,CCTO_HECTO_R14_Targeted_Refit(1).zip::model.py
+Fitting/Initial/results/05_all_both/candidate.json,Packaging adaptation or actual Python reproduction output
+Fitting/Initial/results/05_all_both/candidate_metal.inc,Packaging adaptation or actual Python reproduction output
+Fitting/Initial/results/05_all_both/case_metrics.csv,Packaging adaptation or actual Python reproduction output
+Fitting/Initial/results/05_all_both/element_metrics.csv,Packaging adaptation or actual Python reproduction output
+Fitting/Initial/results/05_all_both/parameters.csv,Packaging adaptation or actual Python reproduction output
+Fitting/Initial/results/comparison.csv,Packaging adaptation or actual Python reproduction output
+Fitting/Refinement/baseline_parameters.json,R20_Targeted_Refit(1).zip::baseline_parameters.json
+Fitting/Refinement/development_data.json,R20_Targeted_Refit(1).zip::development_data.json
+Fitting/Refinement/fit_balanced.py,Packaging adaptation
+Fitting/Refinement/fit_results/02_balanced/candidate.inc,Packaging adaptation or actual Python reproduction output
+Fitting/Refinement/fit_results/02_balanced/metrics.json,Packaging adaptation or actual Python reproduction output
+Fitting/Refinement/fit_results/02_balanced/parameters.json,Packaging adaptation or actual Python reproduction output
+Fitting/Refinement/fit_results/R14_metrics.json,Packaging adaptation or actual Python reproduction output
+Fitting/Refinement/fit_results/fit_summary.json,Packaging adaptation or actual Python reproduction output
+Potential/P0.inc,R19.zip::candidate.inc
+Potential/P0_parameters.json,CCTO_HECTO_R14_Targeted_Refit(1).zip::candidate_05/candidate.json
+Potential/PB.inc,R20_Targeted_Refit(1).zip::fit_results/02_balanced/candidate.inc
+Potential/PB_parameters.json,R20_Targeted_Refit(1).zip::fit_results/02_balanced/parameters.json
+QC/OPEN_ITEMS.md,Packaging adaptation or actual Python reproduction output
+QC/reference_development_metrics.json,R20_Targeted_Refit(1).zip::fit_results/02_balanced/metrics.json
+QC/reference_elastic_summary.csv,R21_Elastic_NVE(1).zip::analysis/elastic_summary.csv
+QC/reproduction_checks.json,Packaging adaptation or actual Python reproduction output
+README.md,Packaging adaptation
+Validation/DFT_Base/CCTO/INCAR,00_DFT_Base.zip::CCTO/INCAR
+Validation/DFT_Base/CCTO/KPOINTS,00_DFT_Base.zip::CCTO/KPOINTS
+Validation/DFT_Base/CCTO/OSZICAR,00_DFT_Base.zip::CCTO/OSZICAR
+Validation/DFT_Base/CCTO/OUTCAR,00_DFT_Base.zip::CCTO/OUTCAR
+Validation/DFT_Base/CCTO/POSCAR,00_DFT_Base.zip::CCTO/POSCAR
+Validation/DFT_Base/CCTO/candidate.inc,00_DFT_Base.zip::CCTO/candidate.inc
+Validation/DFT_Base/CCTO/in.lammps,00_DFT_Base.zip::CCTO/in.lammps
+Validation/DFT_Base/CCTO/md_forces.dump,00_DFT_Base.zip::CCTO/md_forces.dump
+Validation/DFT_Base/CCTO/md_scalar.dat,00_DFT_Base.zip::CCTO/md_scalar.dat
+Validation/DFT_Base/CCTO/reference.json,00_DFT_Base.zip::CCTO/reference.json
+Validation/DFT_Base/CCTO/structure.data,00_DFT_Base.zip::CCTO/structure.data
+Validation/DFT_Base/HECTO/INCAR,00_DFT_Base.zip::HECTO/INCAR
+Validation/DFT_Base/HECTO/KPOINTS,00_DFT_Base.zip::HECTO/KPOINTS
+Validation/DFT_Base/HECTO/OSZICAR,00_DFT_Base.zip::HECTO/OSZICAR
+Validation/DFT_Base/HECTO/OUTCAR,00_DFT_Base.zip::HECTO/OUTCAR
+Validation/DFT_Base/HECTO/POSCAR,00_DFT_Base.zip::HECTO/POSCAR
+Validation/DFT_Base/HECTO/candidate.inc,00_DFT_Base.zip::HECTO/candidate.inc
+Validation/DFT_Base/HECTO/in.lammps,00_DFT_Base.zip::HECTO/in.lammps
+Validation/DFT_Base/HECTO/md_forces.dump,00_DFT_Base.zip::HECTO/md_forces.dump
+Validation/DFT_Base/HECTO/md_scalar.dat,00_DFT_Base.zip::HECTO/md_scalar.dat
+Validation/DFT_Base/HECTO/reference.json,00_DFT_Base.zip::HECTO/reference.json
+Validation/DFT_Base/HECTO/structure.data,00_DFT_Base.zip::HECTO/structure.data
+Validation/Elastic/CCTO/candidate.inc,R21_Elastic_NVE(1).zip::01_Elastic/02_balanced/CCTO/candidate.inc
+Validation/Elastic/CCTO/elastic_points.dat,R21_Elastic_NVE(1).zip::01_Elastic/02_balanced/CCTO/elastic_points.dat
+Validation/Elastic/CCTO/in.lammps,R21_Elastic_NVE(1).zip::01_Elastic/02_balanced/CCTO/in.lammps
+Validation/Elastic/CCTO/log.lammps,R21_Elastic_NVE(1).zip::01_Elastic/02_balanced/CCTO/log.lammps
+Validation/Elastic/CCTO/structure.data,R21_Elastic_NVE(1).zip::01_Elastic/02_balanced/CCTO/structure.data
+Validation/Elastic/HECTO/candidate.inc,R21_Elastic_NVE(1).zip::01_Elastic/02_balanced/HECTO/candidate.inc
+Validation/Elastic/HECTO/elastic_points.dat,R21_Elastic_NVE(1).zip::01_Elastic/02_balanced/HECTO/elastic_points.dat
+Validation/Elastic/HECTO/in.lammps,R21_Elastic_NVE(1).zip::01_Elastic/02_balanced/HECTO/in.lammps
+Validation/Elastic/HECTO/log.lammps,R21_Elastic_NVE(1).zip::01_Elastic/02_balanced/HECTO/log.lammps
+Validation/Elastic/HECTO/structure.data,R21_Elastic_NVE(1).zip::01_Elastic/02_balanced/HECTO/structure.data
+Validation/Independent_Thermal/B/CCTO_300K/INCAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/CCTO_300K/KPOINTS,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/CCTO_300K/OSZICAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/CCTO_300K/OUTCAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/CCTO_300K/POSCAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/CCTO_300K/md_predictions.json,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/CCTO_300K/reference.json,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/CCTO_900K/INCAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/CCTO_900K/KPOINTS,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/CCTO_900K/OSZICAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/CCTO_900K/OUTCAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/CCTO_900K/POSCAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/CCTO_900K/md_predictions.json,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/CCTO_900K/reference.json,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_300K/INCAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_300K/KPOINTS,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_300K/OSZICAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_300K/OUTCAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_300K/POSCAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_300K/md_predictions.json,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_300K/reference.json,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_900K/INCAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_900K/KPOINTS,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_900K/OSZICAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_900K/OUTCAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_900K/POSCAR,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_900K/md_predictions.json,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/B/HECTO_900K/reference.json,R22 original B-frame source or regenerated eight-frame evaluation/packaging output
+Validation/Independent_Thermal/CCTO_300K/INCAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_300K/INCAR
+Validation/Independent_Thermal/CCTO_300K/KPOINTS,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_300K/KPOINTS
+Validation/Independent_Thermal/CCTO_300K/MD_EVIDENCE/R14/candidate.inc,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_300K/MD_EVIDENCE/R14/candidate.inc
+Validation/Independent_Thermal/CCTO_300K/MD_EVIDENCE/R14/in.lammps,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_300K/MD_EVIDENCE/R14/in.lammps
+Validation/Independent_Thermal/CCTO_300K/MD_EVIDENCE/balanced/candidate.inc,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_300K/MD_EVIDENCE/balanced/candidate.inc
+Validation/Independent_Thermal/CCTO_300K/MD_EVIDENCE/balanced/in.lammps,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_300K/MD_EVIDENCE/balanced/in.lammps
+Validation/Independent_Thermal/CCTO_300K/OSZICAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_300K/OSZICAR
+Validation/Independent_Thermal/CCTO_300K/OUTCAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_300K/OUTCAR
+Validation/Independent_Thermal/CCTO_300K/POSCAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_300K/POSCAR
+Validation/Independent_Thermal/CCTO_300K/md_predictions.json,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_300K/md_predictions.json
+Validation/Independent_Thermal/CCTO_300K/reference.json,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_300K/reference.json
+Validation/Independent_Thermal/CCTO_300K/structure.data,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_300K/structure.data
+Validation/Independent_Thermal/CCTO_900K/INCAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_900K/INCAR
+Validation/Independent_Thermal/CCTO_900K/KPOINTS,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_900K/KPOINTS
+Validation/Independent_Thermal/CCTO_900K/MD_EVIDENCE/R14/candidate.inc,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_900K/MD_EVIDENCE/R14/candidate.inc
+Validation/Independent_Thermal/CCTO_900K/MD_EVIDENCE/R14/in.lammps,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_900K/MD_EVIDENCE/R14/in.lammps
+Validation/Independent_Thermal/CCTO_900K/MD_EVIDENCE/balanced/candidate.inc,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_900K/MD_EVIDENCE/balanced/candidate.inc
+Validation/Independent_Thermal/CCTO_900K/MD_EVIDENCE/balanced/in.lammps,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_900K/MD_EVIDENCE/balanced/in.lammps
+Validation/Independent_Thermal/CCTO_900K/OSZICAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_900K/OSZICAR
+Validation/Independent_Thermal/CCTO_900K/OUTCAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_900K/OUTCAR
+Validation/Independent_Thermal/CCTO_900K/POSCAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_900K/POSCAR
+Validation/Independent_Thermal/CCTO_900K/md_predictions.json,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_900K/md_predictions.json
+Validation/Independent_Thermal/CCTO_900K/reference.json,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_900K/reference.json
+Validation/Independent_Thermal/CCTO_900K/structure.data,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/CCTO_900K/structure.data
+Validation/Independent_Thermal/HECTO_300K/INCAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_300K/INCAR
+Validation/Independent_Thermal/HECTO_300K/KPOINTS,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_300K/KPOINTS
+Validation/Independent_Thermal/HECTO_300K/MD_EVIDENCE/R14/candidate.inc,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_300K/MD_EVIDENCE/R14/candidate.inc
+Validation/Independent_Thermal/HECTO_300K/MD_EVIDENCE/R14/in.lammps,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_300K/MD_EVIDENCE/R14/in.lammps
+Validation/Independent_Thermal/HECTO_300K/MD_EVIDENCE/balanced/candidate.inc,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_300K/MD_EVIDENCE/balanced/candidate.inc
+Validation/Independent_Thermal/HECTO_300K/MD_EVIDENCE/balanced/in.lammps,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_300K/MD_EVIDENCE/balanced/in.lammps
+Validation/Independent_Thermal/HECTO_300K/OSZICAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_300K/OSZICAR
+Validation/Independent_Thermal/HECTO_300K/OUTCAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_300K/OUTCAR
+Validation/Independent_Thermal/HECTO_300K/POSCAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_300K/POSCAR
+Validation/Independent_Thermal/HECTO_300K/md_predictions.json,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_300K/md_predictions.json
+Validation/Independent_Thermal/HECTO_300K/reference.json,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_300K/reference.json
+Validation/Independent_Thermal/HECTO_300K/structure.data,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_300K/structure.data
+Validation/Independent_Thermal/HECTO_900K/INCAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_900K/INCAR
+Validation/Independent_Thermal/HECTO_900K/KPOINTS,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_900K/KPOINTS
+Validation/Independent_Thermal/HECTO_900K/MD_EVIDENCE/R14/candidate.inc,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_900K/MD_EVIDENCE/R14/candidate.inc
+Validation/Independent_Thermal/HECTO_900K/MD_EVIDENCE/R14/in.lammps,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_900K/MD_EVIDENCE/R14/in.lammps
+Validation/Independent_Thermal/HECTO_900K/MD_EVIDENCE/balanced/candidate.inc,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_900K/MD_EVIDENCE/balanced/candidate.inc
+Validation/Independent_Thermal/HECTO_900K/MD_EVIDENCE/balanced/in.lammps,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_900K/MD_EVIDENCE/balanced/in.lammps
+Validation/Independent_Thermal/HECTO_900K/OSZICAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_900K/OSZICAR
+Validation/Independent_Thermal/HECTO_900K/OUTCAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_900K/OUTCAR
+Validation/Independent_Thermal/HECTO_900K/POSCAR,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_900K/POSCAR
+Validation/Independent_Thermal/HECTO_900K/md_predictions.json,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_900K/md_predictions.json
+Validation/Independent_Thermal/HECTO_900K/reference.json,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_900K/reference.json
+Validation/Independent_Thermal/HECTO_900K/structure.data,R22_Independent_Structure_Vibration(1).zip::01_DFT_First4/HECTO_900K/structure.data
+Validation/Independent_Thermal/base_energy_references.json,R22_Independent_Structure_Vibration(1).zip::base_energy_references.json
+Validation/Independent_Thermal/tasks.json,Packaging adaptation
+Validation/NVE/CCTO/N2160_dt0.5fs/candidate.inc,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/CCTO/N2160_dt0.5fs/candidate.inc
+Validation/NVE/CCTO/N2160_dt0.5fs/in.lammps,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/CCTO/N2160_dt0.5fs/in.lammps
+Validation/NVE/CCTO/N2160_dt0.5fs/log.lammps,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/CCTO/N2160_dt0.5fs/log.lammps
+Validation/NVE/CCTO/N2160_dt0.5fs/structure.data,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/CCTO/N2160_dt0.5fs/structure.data
+Validation/NVE/CCTO/N640_dt0.25fs/candidate.inc,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/CCTO/N640_dt0.25fs/candidate.inc
+Validation/NVE/CCTO/N640_dt0.25fs/in.lammps,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/CCTO/N640_dt0.25fs/in.lammps
+Validation/NVE/CCTO/N640_dt0.25fs/log.lammps,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/CCTO/N640_dt0.25fs/log.lammps
+Validation/NVE/CCTO/N640_dt0.25fs/structure.data,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/CCTO/N640_dt0.25fs/structure.data
+Validation/NVE/CCTO/N640_dt0.5fs/candidate.inc,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/CCTO/N640_dt0.5fs/candidate.inc
+Validation/NVE/CCTO/N640_dt0.5fs/in.lammps,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/CCTO/N640_dt0.5fs/in.lammps
+Validation/NVE/CCTO/N640_dt0.5fs/log.lammps,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/CCTO/N640_dt0.5fs/log.lammps
+Validation/NVE/CCTO/N640_dt0.5fs/structure.data,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/CCTO/N640_dt0.5fs/structure.data
+Validation/NVE/HECTO/N2160_dt0.5fs/candidate.inc,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/HECTO/N2160_dt0.5fs/candidate.inc
+Validation/NVE/HECTO/N2160_dt0.5fs/in.lammps,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/HECTO/N2160_dt0.5fs/in.lammps
+Validation/NVE/HECTO/N2160_dt0.5fs/log.lammps,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/HECTO/N2160_dt0.5fs/log.lammps
+Validation/NVE/HECTO/N2160_dt0.5fs/structure.data,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/HECTO/N2160_dt0.5fs/structure.data
+Validation/NVE/HECTO/N640_dt0.25fs/candidate.inc,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/HECTO/N640_dt0.25fs/candidate.inc
+Validation/NVE/HECTO/N640_dt0.25fs/in.lammps,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/HECTO/N640_dt0.25fs/in.lammps
+Validation/NVE/HECTO/N640_dt0.25fs/log.lammps,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/HECTO/N640_dt0.25fs/log.lammps
+Validation/NVE/HECTO/N640_dt0.25fs/structure.data,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/HECTO/N640_dt0.25fs/structure.data
+Validation/NVE/HECTO/N640_dt0.5fs/candidate.inc,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/HECTO/N640_dt0.5fs/candidate.inc
+Validation/NVE/HECTO/N640_dt0.5fs/in.lammps,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/HECTO/N640_dt0.5fs/in.lammps
+Validation/NVE/HECTO/N640_dt0.5fs/log.lammps,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/HECTO/N640_dt0.5fs/log.lammps
+Validation/NVE/HECTO/N640_dt0.5fs/structure.data,R21_Elastic_NVE(1).zip::02_NVE/02_balanced/HECTO/N640_dt0.5fs/structure.data
+Validation/Occupancy/configuration_01/INCAR,02-5 Occupancy bypass(1).zip::configuration_01/INCAR
+Validation/Occupancy/configuration_01/KPOINTS,02-5 Occupancy bypass(1).zip::configuration_01/KPOINTS
+Validation/Occupancy/configuration_01/OSZICAR,02-5 Occupancy bypass(1).zip::configuration_01/OSZICAR
+Validation/Occupancy/configuration_01/OUTCAR,02-5 Occupancy bypass(1).zip::configuration_01/OUTCAR
+Validation/Occupancy/configuration_01/POSCAR,02-5 Occupancy bypass(1).zip::configuration_01/POSCAR
+Validation/Occupancy/configuration_01/reference.json,02-5 Occupancy bypass(1).zip::configuration_01/reference.json
+Validation/Occupancy/configuration_02/INCAR,02-5 Occupancy bypass(1).zip::configuration_02/INCAR
+Validation/Occupancy/configuration_02/KPOINTS,02-5 Occupancy bypass(1).zip::configuration_02/KPOINTS
+Validation/Occupancy/configuration_02/OSZICAR,02-5 Occupancy bypass(1).zip::configuration_02/OSZICAR
+Validation/Occupancy/configuration_02/OUTCAR,02-5 Occupancy bypass(1).zip::configuration_02/OUTCAR
+Validation/Occupancy/configuration_02/POSCAR,02-5 Occupancy bypass(1).zip::configuration_02/POSCAR
+Validation/Occupancy/configuration_02/reference.json,02-5 Occupancy bypass(1).zip::configuration_02/reference.json
+Validation/Occupancy/configuration_03/INCAR,02-5 Occupancy bypass(1).zip::configuration_03/INCAR
+Validation/Occupancy/configuration_03/KPOINTS,02-5 Occupancy bypass(1).zip::configuration_03/KPOINTS
+Validation/Occupancy/configuration_03/OSZICAR,02-5 Occupancy bypass(1).zip::configuration_03/OSZICAR
+Validation/Occupancy/configuration_03/OUTCAR,02-5 Occupancy bypass(1).zip::configuration_03/OUTCAR
+Validation/Occupancy/configuration_03/POSCAR,02-5 Occupancy bypass(1).zip::configuration_03/POSCAR
+Validation/Occupancy/configuration_03/reference.json,02-5 Occupancy bypass(1).zip::configuration_03/reference.json
+Validation/Structure_Thermal/CCTO/00_relax_0K/candidate.inc,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/00_relax_0K/candidate.inc
+Validation/Structure_Thermal/CCTO/00_relax_0K/in.lammps,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/00_relax_0K/in.lammps
+Validation/Structure_Thermal/CCTO/00_relax_0K/log.lammps,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/00_relax_0K/log.lammps
+Validation/Structure_Thermal/CCTO/00_relax_0K/relaxed_scalar.dat,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/00_relax_0K/relaxed_scalar.dat
+Validation/Structure_Thermal/CCTO/00_relax_0K/structure.data,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/00_relax_0K/structure.data
+Validation/Structure_Thermal/CCTO/01_300K/candidate.inc,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/01_300K/candidate.inc
+Validation/Structure_Thermal/CCTO/01_300K/in.lammps,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/01_300K/in.lammps
+Validation/Structure_Thermal/CCTO/01_300K/log.lammps,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/01_300K/log.lammps
+Validation/Structure_Thermal/CCTO/01_300K/mean_box.dat,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/01_300K/mean_box.dat
+Validation/Structure_Thermal/CCTO/01_300K/production_stats.dat,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/01_300K/production_stats.dat
+Validation/Structure_Thermal/CCTO/01_300K/structure.data,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/01_300K/structure.data
+Validation/Structure_Thermal/CCTO/02_900K/candidate.inc,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/02_900K/candidate.inc
+Validation/Structure_Thermal/CCTO/02_900K/in.lammps,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/02_900K/in.lammps
+Validation/Structure_Thermal/CCTO/02_900K/log.lammps,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/02_900K/log.lammps
+Validation/Structure_Thermal/CCTO/02_900K/mean_box.dat,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/02_900K/mean_box.dat
+Validation/Structure_Thermal/CCTO/02_900K/production_stats.dat,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/02_900K/production_stats.dat
+Validation/Structure_Thermal/CCTO/02_900K/structure.data,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/CCTO/02_900K/structure.data
+Validation/Structure_Thermal/HECTO/00_relax_0K/candidate.inc,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/00_relax_0K/candidate.inc
+Validation/Structure_Thermal/HECTO/00_relax_0K/in.lammps,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/00_relax_0K/in.lammps
+Validation/Structure_Thermal/HECTO/00_relax_0K/log.lammps,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/00_relax_0K/log.lammps
+Validation/Structure_Thermal/HECTO/00_relax_0K/relaxed_scalar.dat,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/00_relax_0K/relaxed_scalar.dat
+Validation/Structure_Thermal/HECTO/00_relax_0K/structure.data,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/00_relax_0K/structure.data
+Validation/Structure_Thermal/HECTO/01_300K/candidate.inc,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/01_300K/candidate.inc
+Validation/Structure_Thermal/HECTO/01_300K/in.lammps,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/01_300K/in.lammps
+Validation/Structure_Thermal/HECTO/01_300K/log.lammps,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/01_300K/log.lammps
+Validation/Structure_Thermal/HECTO/01_300K/mean_box.dat,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/01_300K/mean_box.dat
+Validation/Structure_Thermal/HECTO/01_300K/production_stats.dat,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/01_300K/production_stats.dat
+Validation/Structure_Thermal/HECTO/01_300K/structure.data,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/01_300K/structure.data
+Validation/Structure_Thermal/HECTO/02_900K/candidate.inc,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/02_900K/candidate.inc
+Validation/Structure_Thermal/HECTO/02_900K/in.lammps,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/02_900K/in.lammps
+Validation/Structure_Thermal/HECTO/02_900K/log.lammps,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/02_900K/log.lammps
+Validation/Structure_Thermal/HECTO/02_900K/mean_box.dat,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/02_900K/mean_box.dat
+Validation/Structure_Thermal/HECTO/02_900K/production_stats.dat,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/02_900K/production_stats.dat
+Validation/Structure_Thermal/HECTO/02_900K/structure.data,R20_Targeted_Refit(1).zip::LAMMPS_CHECKS/02_balanced/HECTO/02_900K/structure.data
+Validation/tasks.json,Packaging adaptation
+requirements.txt,Packaging adaptation
+使用说明.txt,Packaging adaptation or actual Python reproduction output
