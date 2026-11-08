@@ -1,0 +1,66 @@
+[
+  {
+    "folder": "CCTO_300K",
+    "kind": "DFT_static",
+    "material": "CCTO",
+    "temperature_K": 300,
+    "natoms": 80,
+    "priority": "first"
+  },
+  {
+    "folder": "CCTO_900K",
+    "kind": "DFT_static",
+    "material": "CCTO",
+    "temperature_K": 900,
+    "natoms": 80,
+    "priority": "first"
+  },
+  {
+    "folder": "HECTO_300K",
+    "kind": "DFT_static",
+    "material": "HECTO",
+    "temperature_K": 300,
+    "natoms": 80,
+    "priority": "first"
+  },
+  {
+    "folder": "HECTO_900K",
+    "kind": "DFT_static",
+    "material": "HECTO",
+    "temperature_K": 900,
+    "natoms": 80,
+    "priority": "first"
+  },
+  {
+    "folder": "B/CCTO_300K",
+    "kind": "DFT_static",
+    "material": "CCTO",
+    "temperature_K": 300,
+    "natoms": 80,
+    "priority": "reserve"
+  },
+  {
+    "folder": "B/CCTO_900K",
+    "kind": "DFT_static",
+    "material": "CCTO",
+    "temperature_K": 900,
+    "natoms": 80,
+    "priority": "reserve"
+  },
+  {
+    "folder": "B/HECTO_300K",
+    "kind": "DFT_static",
+    "material": "HECTO",
+    "temperature_K": 300,
+    "natoms": 80,
+    "priority": "reserve"
+  },
+  {
+    "folder": "B/HECTO_900K",
+    "kind": "DFT_static",
+    "material": "HECTO",
+    "temperature_K": 900,
+    "natoms": 80,
+    "priority": "reserve"
+  }
+]
